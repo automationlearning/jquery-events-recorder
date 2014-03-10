@@ -59,6 +59,7 @@ Recorder.prototype.getScript = function(){
 
         if(item.value !== null){
             linecode = selector + '.val("'+item.value+'");';
+            linecode = selector + '.trigger("change");';
         }else{
             linecode = selector + '.trigger("'+item.type+'");';
         }
